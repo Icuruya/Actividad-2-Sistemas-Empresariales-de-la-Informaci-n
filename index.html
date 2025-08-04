@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 2 - Sistemas Empresariales de la Información</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilos para el mapa conceptual */
+        .mindmap-root {
+            background-color: #dbeafe; /* blue-100 */
+            border-color: #93c5fd; /* blue-300 */
+        }
+        .mindmap-level1 {
+            background-color: #fee2e2; /* red-100 */
+            border-color: #fca5a5; /* red-300 */
+        }
+        .mindmap-level2 {
+            background-color: #dcfce7; /* green-100 */
+            border-color: #86efac; /* green-300 */
+        }
+        .mindmap-node {
+            padding: 1rem;
+            border-radius: 0.75rem;
+            border-width: 2px;
+            text-align: center;
+            font-weight: 600;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Contenedor Principal -->
+    <div class="container mx-auto p-4 sm:p-6 md:p-8 max-w-5xl">
+
+        <!-- Portada / Encabezado -->
+        <header class="bg-white p-8 rounded-xl shadow-md mb-8 border border-gray-200">
+            <div class="text-center">
+                <h1 class="text-3xl md:text-4xl font-bold text-blue-700">Sistemas Empresariales de la Información</h1>
+                <p class="text-xl md:text-2xl text-gray-600 mt-2">Actividad 2: Análisis y Propuesta de Sistemas</p>
+            </div>
+            <hr class="my-6 border-gray-200">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-center sm:text-left">
+                <div>
+                    <p class="font-semibold text-gray-500">Alumno:</p>
+                    <p class="text-lg font-medium">José Eduardo Garza Ovalle</p>
+                </div>
+                <div class="sm:text-right">
+                    <p class="font-semibold text-gray-500">Matrícula:</p>
+                    <p class="text-lg font-medium">7044692</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-500">Universidad:</p>
+                    <p class="text-lg font-medium">Universidad Tecmilenio</p>
+                </div>
+                 <div class="sm:text-right">
+                    <p class="font-semibold text-gray-500">Fecha:</p>
+                    <p class="text-lg font-medium">2 de agosto de 2025</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Contenido de la Actividad -->
+        <main class="space-y-8">
+
+            <!-- Parte 1 -->
+            <section id="parte1" class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
+                <h2 class="text-2xl font-bold mb-6 text-blue-600 border-l-4 border-blue-600 pl-4">Parte 1: Caso "Entrega Rápida"</h2>
+                
+                <h3 class="text-xl font-semibold mb-3">Propuesta de Sistemas Empresariales</h3>
+                <ol class="list-decimal list-inside space-y-3 text-gray-700 mb-6">
+                    <li><strong class="font-semibold text-gray-900">SAP S/4HANA:</strong> Sistema ERP de última generación que integra procesos en tiempo real, con un robusto módulo de SCM ideal para logística compleja.</li>
+                    <li><strong class="font-semibold text-gray-900">Oracle NetSuite:</strong> Solución ERP 100% en la nube que ofrece una visión unificada del negocio, destacando por su escalabilidad y accesibilidad.</li>
+                    <li><strong class="font-semibold text-gray-900">Microsoft Dynamics 365 SCM:</strong> Plataforma que combina ERP y CRM con herramientas de IA, diseñada para optimizar toda la cadena de suministro.</li>
+                </ol>
+
+                <h3 class="text-xl font-semibold mb-4">Cuadro Comparativo de Sistemas</h3>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left text-gray-600">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-100">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 rounded-tl-lg">Evaluación/Sistema</th>
+                                <th scope="col" class="px-6 py-3">SAP S/4HANA</th>
+                                <th scope="col" class="px-6 py-3">Oracle NetSuite</th>
+                                <th scope="col" class="px-6 py-3 rounded-tr-lg">Microsoft Dynamics 365</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b">
+                                <th scope="row" class="px-6 py-4 font-bold text-gray-900">Financiero</th>
+                                <td class="px-6 py-4">Costo de licencia e implementación elevado (CAPEX). ROI a largo plazo por optimización. Requiere personal especializado.</td>
+                                <td class="px-6 py-4">Modelo de suscripción (OPEX) con costo predecible. Menor inversión inicial y sin necesidad de infraestructura propia.</td>
+                                <td class="px-6 py-4">Modelo de suscripción flexible. Ahorro potencial por integración nativa con el ecosistema Microsoft (Office 365, Power BI).</td>
+                            </tr>
+                            <tr class="bg-gray-50 border-b">
+                                <th scope="row" class="px-6 py-4 font-bold text-gray-900">Tecnológico</th>
+                                <td class="px-6 py-4">Plataforma de alto rendimiento (HANA). Opciones de despliegue flexibles: on-premise, nube o híbrido.</td>
+                                <td class="px-6 py-4">100% nativo en la nube. Alta disponibilidad y actualizaciones automáticas gestionadas por el proveedor.</td>
+                                <td class="px-6 py-4">Nube (Azure) con IA integrada. Arquitectura modular y fácil integración con Power Platform.</td>
+                            </tr>
+                            <tr class="bg-white">
+                                <th scope="row" class="px-6 py-4 font-bold text-gray-900 rounded-bl-lg">Servicio al Proveedor</th>
+                                <td class="px-6 py-4">Extenso ecosistema de partners certificados. Soporte oficial robusto pero puede ser costoso. Gran comunidad de usuarios.</td>
+                                <td class="px-6 py-4">Soporte centralizado por Oracle. Red de partners sólida. El modelo SaaS asegura mantenimiento y seguridad.</td>
+                                <td class="px-6 py-4 rounded-br-lg">Amplia red de socios Microsoft. Soporte respaldado por la infraestructura global de Azure. Documentación extensa.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 mt-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Ventajas de Comprar Software Comercial</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li><strong class="font-semibold text-gray-900">Implementación Rápida:</strong> Reduce drásticamente el tiempo de puesta en marcha.</li>
+                            <li><strong class="font-semibold text-gray-900">Menor Riesgo y Costo:</strong> Costo total predecible y menor riesgo de fracaso del proyecto.</li>
+                            <li><strong class="font-semibold text-gray-900">Soporte y Actualizaciones:</strong> El proveedor se encarga del mantenimiento y la evolución del sistema.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Desventajas de Desarrollar a la Medida</h4>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li><strong class="font-semibold text-gray-900">Alto Costo y Tiempo:</strong> Requiere una inversión significativa en talento, tiempo y recursos.</li>
+                            <li><strong class="font-semibold text-gray-900">Dependencia del Personal:</strong> El conocimiento reside en pocos desarrolladores, lo que es un riesgo.</li>
+                            <li><strong class="font-semibold text-gray-900">Carga de Mantenimiento:</strong> La empresa es 100% responsable de mantener y actualizar el software.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Parte 2 -->
+            <section id="parte2" class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
+                <h2 class="text-2xl font-bold mb-6 text-blue-600 border-l-4 border-blue-600 pl-4">Parte 2: Sistemas para la Toma de Decisiones</h2>
+                
+                <h3 class="text-xl font-semibold mb-4">Tabla Comparativa de Sistemas</h3>
+                 <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left text-gray-600">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-100">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 rounded-tl-lg">Sistema</th>
+                                <th scope="col" class="px-6 py-3">Definición</th>
+                                <th scope="col" class="px-6 py-3">Ventajas</th>
+                                <th scope="col" class="px-6 py-3 rounded-tr-lg">Desventajas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b"><th class="px-6 py-4 font-bold">GDSS</th><td class="px-6 py-4">Facilita la solución de problemas no estructurados en grupo.</td><td class="px-6 py-4">Mejora la comunicación, permite anonimato, genera más ideas.</td><td class="px-6 py-4">Costoso de implementar, posible resistencia al cambio.</td></tr>
+                            <tr class="bg-gray-50 border-b"><th class="px-6 py-4 font-bold">DSS</th><td class="px-6 py-4">Combina datos y modelos analíticos para decisiones semi-estructuradas.</td><td class="px-6 py-4">Aumenta velocidad y calidad de decisiones, permite análisis "what-if".</td><td class="px-6 py-4">Puede ser complejo, depende de la calidad de los datos y modelos.</td></tr>
+                            <tr class="bg-white border-b"><th class="px-6 py-4 font-bold">EIS</th><td class="px-6 py-4">Diseñado para las necesidades estratégicas de la alta dirección.</td><td class="px-6 py-4">Fácil de usar, visión amplia del negocio, identificación rápida de tendencias.</td><td class="px-6 py-4">Alcance limitado, costoso, información puede ser muy resumida.</td></tr>
+                            <tr class="bg-gray-50"><th class="px-6 py-4 font-bold rounded-bl-lg">EDSS</th><td class="px-6 py-4">Sistema Experto que emula el razonamiento de un experto humano.</td><td class="px-6 py-4">Preserva conocimiento, proporciona consistencia en decisiones.</td><td class="px-6 py-4 rounded-br-lg">Desarrollo complejo, conocimiento difícil de extraer, sin "sentido común".</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="text-xl font-semibold my-6">Mapa Conceptual: Pruebas de Aplicación</h3>
+                <div class="flex flex-col items-center justify-center space-y-4">
+                    <div class="mindmap-node mindmap-root">Pruebas de Aplicación</div>
+                    <div class="w-full flex flex-col md:flex-row justify-center items-start gap-8">
+                        <!-- Columna Tipos de Pruebas -->
+                        <div class="flex flex-col items-center space-y-4 w-full md:w-1/2">
+                            <div class="mindmap-node mindmap-level1 w-full">Tipos de Pruebas</div>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 w-full">
+                                <div class="mindmap-node mindmap-level2">Unitarias</div>
+                                <div class="mindmap-node mindmap-level2">Integración</div>
+                                <div class="mindmap-node mindmap-level2">Sistema</div>
+                                <div class="mindmap-node mindmap-level2">Aceptación</div>
+                                <div class="mindmap-node mindmap-level2">Regresión</div>
+                                <div class="mindmap-node mindmap-level2">Rendimiento</div>
+                            </div>
+                        </div>
+                        <!-- Columna Proceso de Pruebas -->
+                        <div class="flex flex-col items-center space-y-4 w-full md:w-1/2">
+                            <div class="mindmap-node mindmap-level1 w-full">Proceso de Pruebas</div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
+                                <div class="mindmap-node mindmap-level2">1. Planificación</div>
+                                <div class="mindmap-node mindmap-level2">2. Diseño</div>
+                                <div class="mindmap-node mindmap-level2">3. Ejecución</div>
+                                <div class="mindmap-node mindmap-level2">4. Reporte</div>
+                                <div class="mindmap-node mindmap-level2 col-span-1 sm:col-span-2">5. Cierre</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Parte 3 -->
+            <section id="parte3" class="bg-white p-8 rounded-xl shadow-md border border-gray-200">
+                <h2 class="text-2xl font-bold mb-6 text-blue-600 border-l-4 border-blue-600 pl-4">Parte 3: Caso Empresa de Telefonía Celular</h2>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2">Decisiones Gerenciales con el Uso de la Información</h3>
+                        <p class="text-gray-700">Con un DSS, la gerencia puede tomar decisiones proactivas basadas en evidencia para:</p>
+                        <ul class="list-disc list-inside space-y-2 mt-2 text-gray-700">
+                            <li><strong>Marketing y Ventas:</strong> Diseñar planes y promociones de retención personalizados según la causa de la cancelación (costo, competencia).</li>
+                            <li><strong>Operaciones e Infraestructura:</strong> Priorizar inversiones en la red en zonas geográficas con mala cobertura si ese es un factor clave de churn.</li>
+                            <li><strong>Servicio al Cliente:</strong> Reestructurar procesos o capacitar agentes si se detectan problemas en el centro de atención.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2">Factores para una Implantación Exitosa</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li><strong>Alineación Estratégica:</strong> El sistema debe responder a las preguntas clave del negocio.</li>
+                            <li><strong>Calidad de Datos:</strong> Es crucial asegurar que los datos de las fuentes (CRM, facturación) sean precisos y estén integrados.</li>
+                            <li><strong>Involucramiento del Usuario:</strong> Los gerentes y analistas deben participar desde el diseño para asegurar la relevancia de la herramienta.</li>
+                             <li><strong>Enfoque Iterativo:</strong> Empezar con un prototipo que resuelva el problema más urgente y escalar gradualmente.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-2">Tipos de Pruebas a Utilizar</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li><strong>Pruebas de Integración:</strong> Para verificar la correcta conexión y flujo de datos desde los sistemas fuente.</li>
+                            <li><strong>Pruebas de Sistema:</strong> Para evaluar que todos los módulos del DSS (reportes, dashboards) funcionen correctamente como un todo.</li>
+                            <li><strong>Pruebas de Aceptación del Usuario (UAT):</strong> La prueba más crítica, donde los gerentes validan que el sistema cumple sus necesidades.</li>
+                        </ul>
+                    </div>
+                     <div>
+                        <h3 class="text-lg font-semibold mb-2">Plan y Proceso de Prueba</h3>
+                        <p class="text-gray-700">El proceso seguiría 4 fases clave: <strong>1. Planificación y Diseño</strong> (definir estrategia y casos de prueba), <strong>2. Ejecución de Pruebas</strong> (el equipo de QA prueba el sistema y reporta defectos), <strong>3. Pruebas de Aceptación (UAT)</strong> (usuarios finales validan el sistema), y <strong>4. Reporte y Cierre</strong> (se genera un informe final y se archiva la documentación).</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        <!-- Pie de página -->
+        <footer class="text-center mt-8 text-gray-500 text-sm">
+            <p>José Eduardo Garza Ovalle | Universidad Tecmilenio</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
